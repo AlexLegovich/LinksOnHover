@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+</head>
+<body>
+    <section class="links">
+        <div class="container">
+            <a href="popup1" class="hover-1">Left to right</a>
+            <a href="popup2" class="hover-2">From center</a>
+            <a href="popup3" class="hover-3">Left to right and back</a>
+            <a href="popup4" class="hover-4">Right to left and back</a>
+            <a href="popup5" class="hover-5">Scaling height</a>
+            <a href="popup6" class="hover-6">Edges to center</a>
+            <a href="popup7" class="hover-7">Top & bottom, left to right + reverse</a>
+            <a href="popup8" class="hover-8">Top & bottom, left to right</a>
+            <a href="popup9" class="hover-9"> Top & bottom, right to left</a>
+            <a href="popup10" class="hover-10"> Top & bottom tips to center</a>
+            <a href="popup11" class="hover-11"> Top & bottom, scaling height</a>
+            <a href="popup12" class="hover-12"> Top & bottom, left to right + reverse</a>
+        </div>
+    </section>
+    <!-- hover1popup -->
+    <div id="popup1" class="popup-1">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title title1">Left to right</div>
+                <div class="popup_text">
+                    
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                          transform-origin: bottom left;<br>
+                          transform: scaleX(1);<br>
+                        }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup2" class="popup-2">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">From center</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        transform: scaleX(0);<br>
+                        background-color: #ffffff;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup3" class="popup-3">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Left to right and back</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup4" class="popup-4">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Right to left and back</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+
+    <div id="popup5" class="popup-5">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Scaling height</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        transform: scaleY(0);<br>
+                        background-color: transparent;<br>
+                        transition: all 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleY(1);<br>
+                        background-color: #ffffff;<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup6" class="popup-6">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Edges to center</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        right: 50%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        left: 50%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:before {<br>
+                        transform: scaleX(1);<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup7" class="popup-7">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom, left to right + reverse</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        top: -2px;<br>
+                        left: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;
+                        transform: scaleX(0);
+                        transform-origin: bottom right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:before {<br>
+                        transform: scaleX(1);<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup8" class="popup-8">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom, left to right</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;
+                        top: -2px;<br>
+                        left: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:before,<br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup9" class="popup-9">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom, right to left</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        top: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br>
+                      .your-class:hover:before,<br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup10" class="popup-10">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom tips to center</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        top: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:before,<br>
+                      .your-class:hover:after {<br>
+                        transform: scaleX(1);<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup11" class="popup-11">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom, scaling height</div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        top: -2px;<br>
+                        left: 0;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        transform: scaleY(0);<br>
+                        background-color: transparent;<br>
+                        transition: all 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        bottom: -2px;<br>
+                        left: 0;<br>
+                        right: 0;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        transform: scaleY(0);<br>
+                        background-color: transparent;<br>
+                        transition: all 0.3s;<br>
+                      }<br><br>
+                      .your-class:before,<br>
+                      .your-class:hover:after {<br>
+                        transform: scaleY(1);<br>
+                        background-color: #ffffff;<br>
+                      }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+    <div id="popup12" class="popup-12">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">Close X</a>
+                <div class="popup_title">Top & bottom, left to right + reverse </div>
+                <div class="popup_text">
+                    .your-class{<br>
+                        width:auto!important;<br>
+                    } <br><br>
+                    .your-class:before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        top: -2px;<br>
+                        left: 0;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: top left;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:after {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        width: 100%;<br>
+                        height: 2px;<br>
+                        bottom: -2px;<br>
+                        right: 0;<br>
+                        background-color: #ffffff;<br>
+                        transform: scaleX(0);<br>
+                        transform-origin: bottom right;<br>
+                        transition: transform 0.3s;<br>
+                      }<br><br>
+                      .your-class:hover:before {<br>
+                        transform-origin: top right;<br>
+                        transform: scaleX(1);<br>
+                      }<br><br>
+                      .your-class:hover:after {<br>
+                        transform-origin: bottom left;<br>
+                        transform: scaleX(1);<br>
+                      }
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- -->
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/popups.js"></script>
+</body>
+</html>
